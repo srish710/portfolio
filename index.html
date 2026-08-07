@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srishti Jha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="snow"></canvas>
+
+  <nav>
+    <div class="nav-logo">SJ</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Portfolio</p>
+      <h1 class="hero-name">Srishti Jha</h1>
+      <p class="hero-tagline">Engineering &amp; Design</p>
+      <a href="#work" class="hero-btn">View My Work</a>
+    </div>
+    <div class="hero-mountains">
+      <svg viewBox="0 0 1440 640" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="480,520  900,0  1300,426" fill="#f2f7fa"/>
+        <polygon points="720,640  1280,30  1440,640" fill="#f2f7fa"/>
+        <rect x="0" y="520" width="1440" height="107" fill="#f2f7fa"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-text">
+        <span class="section-label">01 — About</span>
+        <h2>Focused on <em>technology</em></h2>
+        <p>I am an engineering student particularly interested in the design and development of healthcare innovations.</p>
+        <p>I wish to gain experience working in various aspects of tech, and I would love the oppurtunity to work in any field!</p>
+      </div>
+      <div class="about-image">
+        <img src="profile.jpg" alt="Profile photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section-dark" id="work">
+    <div class="section-inner">
+      <span class="section-label">02 — Work</span>
+      <h2>Selected <em>Projects</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card" onclick="openModal('modal1')">
+          <img class="project-img" src="project1.jpg" alt="Project One" />
+          <div class="project-info">
+            <h3>NASAOrbit</h3>
+            <p>As part of the Build4Good hackathon, I developed, alongside a team, a website to moniter and track vital signs of astronauts as according to NASA battery tests, described in HERA studies. The website has a user and admin end, with admin end offering downloadable files containing all team member statistics.</p>
+            <div class="project-tags"><span>Design</span><span>HTML</span><span>CSS</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal2')">
+          <img class="project-img" src="project2.jpg" alt="Project Two" />
+          <div class="project-info">
+            <h3>DreamBreathe</h3>
+            <p>As a part of the Product@TAMU hackathon, I developed, alongside a team, a product concept for a smartCPAP machine called DreamBreathe. This machine concept comes with a fully developed mock-up and design, as well as the framework for the full associated app, which offers sleep statistic readings, as well as notification settings in cases of emergencies.</p>
+            <div class="project-tags"><span>JavaScript</span><span>UI/UX</span></div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal3')">
+          <img class="project-img" src="project3.jpg" alt="Project Three" />
+          <div class="project-info">
+            <h3>REU: MD Anderson</h3>
+            <p>Over the summer of 2025, I had the oppurtunity to intern at MD Anderson at the Experimental Therapuetics lab, under Dr. Lopez-Berestien and Dr. Cristian Agyuao. We worked with liposomal delievery of various cancer medications to sample human cells, and within this process I became extremely familiar with clonogenic assays, western blot, and other complex lab procedures.</p>
+            <div class="project-tags"><span>Branding</span><span>Web</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECT MODALS ─────────────────────── -->
+
+  <!-- Modal 1 -->
+  <div class="modal-overlay" id="modal1" onclick="closeOnOverlay(event, 'modal1')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal1')">✕</button>
+      <div class="modal-header">
+        <h2 class="modal-title">NASAOrbit</h2>
+        <span class="modal-date">March 2026</span>
+      </div>
+      <div class="modal-tags">
+        <span>Design</span><span>HTML</span><span>CSS</span>
+      </div>
+      <p class="modal-desc">
+        This is the longer description for Project One. Describe what the project was about, the problem you were solving, your process, what tools you used, and what the outcome was. This can be 3–5 sentences or more.
+      </p>
+      <div class="modal-images">
+        <img src="project1.jpg" alt="Project One image 1" />
+        <img src="project1b.jpg" alt="Project One image 2" />
+        <img src="project1c.jpg" alt="Project One image 3" />
+        <img src="project1d.jpg" alt="Project One image 4" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal-overlay" id="modal2" onclick="closeOnOverlay(event, 'modal2')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal2')">✕</button>
+      <div class="modal-header">
+        <h2 class="modal-title">Snoozle</h2>
+        <span class="modal-date">April 2026</span>
+      </div>
+      <div class="modal-tags">
+        <span>JavaScript</span><span>UI/UX</span>
+      </div>
+      <p class="modal-desc">
+        This is the longer description for Project Two. Describe what the project was about, the problem you were solving, your process, what tools you used, and what the outcome was. This can be 3–5 sentences or more.
+      </p>
+      <div class="modal-images">
+        <img src="project2.jpg" alt="Project Two image 1" />
+        <img src="project2b.jpg" alt="Project Two image 2" />
+        <img src="project2c.jpg" alt="Project Two image 3" />
+        <img src="project2d.jpg" alt="Project Two image 4" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal-overlay" id="modal3" onclick="closeOnOverlay(event, 'modal3')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal3')">✕</button>
+      <div class="modal-header">
+        <h2 class="modal-title">REU: MD Anderson</h2>
+        <span class="modal-date">June 2025</span>
+      </div>
+      <div class="modal-tags">
+        <span>Branding</span><span>Web</span>
+      </div>
+      <p class="modal-desc">
+        This is the longer description for Project Three. Describe what the project was about, the problem you were solving, your process, what tools you used, and what the outcome was. This can be 3–5 sentences or more.
+      </p>
+      <div class="modal-images">
+        <img src="project3.jpg" alt="Project Three image 1" />
+        <img src="project3b.jpg" alt="Project Three image 2" />
+        <img src="project3c.jpg" alt="Project Three image 3" />
+        <img src="project3d.jpg" alt="Project Three image 4" />
+      </div>
+    </div>
+  </div>
+
+  <!-- DIGITAL PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="section-inner">
+      <span class="section-label">03 — Digital Portfolio</span>
+      <h2>Creative <em>Showcase</em></h2>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item tall">
+          <img src="creative1.jpg" alt="Creative work 1" />
+          <div class="portfolio-caption"><h4>yo mama</h4><p>Medium / Year</p></div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="creative2.jpg" alt="Creative work 2" />
+          <div class="portfolio-caption"><h4>yo mama mama</h4><p>Medium / Year</p></div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="creative3.jpg" alt="Creative work 3" />
+          <div class="portfolio-caption"><h4>yo mama mama mama</h4><p>Medium / Year</p></div>
+        </div>
+
+        <div class="portfolio-item wide">
+          <img src="creative4.jpg" alt="Creative work 4" />
+          <div class="portfolio-caption"><h4>yo mama mama mama mama</h4><p>Medium / Year</p></div>
+        </div>
+
+        <div class="portfolio-item full wide-short">
+          <img src="creative5.jpg" alt="Creative work 5" />
+          <div class="portfolio-caption"><h4>yo mama mama mama mama mama</h4><p>Medium / Year</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="section-inner">
+      <span class="section-label">04 — Skills</span>
+      <h2>Tools &amp; <em>Expertise</em></h2>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h4>Design</h4>
+          <p>Figma, Adobe XD, Illustrator, Photoshop</p>
+        </div>
+        <div class="skill-block">
+          <h4>Frontend</h4>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-block">
+          <h4>Backend</h4>
+          <p>Node.js, Python, SQL, REST APIs</p>
+        </div>
+        <div class="skill-block">
+          <h4>Other</h4>
+          <p>Git, Agile, Photography, Writing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-inner">
+      <span class="section-label">05 — Contact</span>
+      <h2>Let's <em>Connect</em></h2>
+      <p class="contact-intro">Open to new projects, collaborations, or just a good conversation. Reach out anytime.</p>
+      <a href="mailto:you@email.com" class="contact-btn">Email me!</a>
+      <div class="social-links">
+        <a href="#"> github </a>
+        <a href="#"> www.linkedin.com/in/srishtijha2006
+        <a href="#">jhasrishti@tamu.edu</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Srishti Jha. Designed from the peaks.</p>
+  </footer>
+
+  <script>
+    // snow falling
+    const canvas = document.getElementById('snow');
+    const ctx = canvas.getContext('2d');
+    let W, H, flakes = [];
+
+    function resize() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function makeFlake() {
+      return {
+        x: Math.random() * W,
+        y: Math.random() * H - H,
+        r: Math.random() * 2 + 0.4,
+        speed: Math.random() * 0.5 + 0.15,
+        drift: (Math.random() - 0.5) * 0.25,
+        opacity: Math.random() * 0.45 + 0.15
+      };
+    }
+
+    for (let i = 0; i < 140; i++) {
+      const f = makeFlake();
+      f.y = Math.random() * H;
+      flakes.push(f);
+    }
+
+    function drawSnow() {
+      ctx.clearRect(0, 0, W, H);
+      flakes.forEach(f => {
+        ctx.beginPath();
+        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${f.opacity})`;
+        ctx.fill();
+        f.y += f.speed;
+        f.x += f.drift;
+        if (f.y > H + 5) { Object.assign(f, makeFlake()); f.y = -5; }
+        if (f.x > W + 5) f.x = -5;
+        if (f.x < -5)    f.x = W + 5;
+      });
+      requestAnimationFrame(drawSnow);
+    }
+    drawSnow();
+
+    // ── Scroll fade-in ────────────────────────
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.section').forEach(s => observer.observe(s));
+
+    // controls
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function closeOnOverlay(event, id) {
+      if (event.target === document.getElementById(id)) {
+        closeModal(id);
+      }
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach(m => {
+          m.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
